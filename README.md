@@ -11,7 +11,5 @@
 Download and execute the script. Answer the questions asked by the script and it will take care of the rest.
 
 ```bash
-curl -O https://raw.githubusercontent.com/ongtungduong/wireguard-installer/main/wireguard-installer.sh
-chmod +x wireguard-installer.sh
-./wireguard-installer.sh
+bash <(curl -L https://github.com/ongtungduong/wireguard-installer/raw/main/wireguard-installer.sh)
 ```

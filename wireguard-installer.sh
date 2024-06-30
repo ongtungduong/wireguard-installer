@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sleep 5
+
 mkdir -p ~/wireguard
 cd ~/wireguard
 
@@ -44,5 +46,6 @@ echo "To see Wireguard Admin Password, run the following command: cat ~/wireguar
 # Start Wireguard
 echo "Starting Wireguard Server..."
 docker compose up -d
+echo ""
 echo "Wireguard Admin UI is running on port 8080"
 echo "It's recommended to not expose Wireguard Admin UI port to the public internet for security reasons."
