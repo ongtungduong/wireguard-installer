@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 5
+sleep 3
 
 mkdir -p ~/wireguard
 cd ~/wireguard
@@ -12,8 +12,8 @@ echo "You can keep the default options and just press enter if you are ok with t
 echo ""
 
 # Get compose file
-COMPOSE_FILE="https://raw.githubusercontent.com/ongtungduong/wireguard-installer/main/compose.yaml"
-curl -o compose.yaml "$COMPOSE_FILE"
+COMPOSE_FILE="https://github.com/ongtungduong/wireguard-installer/raw/main/compose.yaml"
+curl -L "$COMPOSE_FILE" 2>/dev/null > compose.yaml
 
 # Get environment variables
 
