@@ -11,7 +11,7 @@ echo ""
 
 # Get compose file
 COMPOSE_FILE="https://github.com/ongtungduong/wireguard-installer/raw/main/compose.yaml"
-curl -L "$COMPOSE_FILE" > compose.yaml 2>/dev/null
+curl -sSL "$COMPOSE_FILE" > compose.yaml
 
 # Get environment variables
 
