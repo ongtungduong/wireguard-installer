@@ -8,7 +8,7 @@
 
 ## Usage
 
-Running the following command and answer the questions asked by the script.
+Run the following command and answer the questions asked by the script.
 
 ```bash
 bash <(curl -L https://github.com/ongtungduong/wireguard-installer/raw/main/wireguard-installer.sh 2>/dev/null)
