@@ -353,7 +353,8 @@ function manageMenu() {
 	echo "   2) List all users"
 	echo "   3) Revoke existing user"
 	echo "   4) Uninstall WireGuard"
-	echo "   5) Exit"
+	echo "   5) Get client config"
+	echo "   0) Exit"
 	until [[ ${MENU_OPTION} =~ ^[0-5]$ ]]; do
 		read -rp "Select an option [0-5]: " MENU_OPTION
 	done

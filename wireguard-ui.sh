@@ -41,9 +41,14 @@ WG_PASSWORD=$(openssl rand -base64 32 | tr -d 'iI1lLoO0' | tr -d -c '[:alnum:]' 
 echo "WG_PASSWORD=$WG_PASSWORD" >> .env
 echo "To see Wireguard Admin Password, run the following command: cat ~/wireguard/.env | grep WG_PASSWORD"
 
+# Wireguard UI
+WG_UI_PORT=${WG_UI_PORT:-8080}
+read -p "Please enter Wireguard Admin UI Port [Default: 8080]: " WG_UI_PORT
+echo "WG_UI_PORT=$WG_UI_PORT" >> .env
+
 # Start Wireguard
 echo "Starting Wireguard Server..."
 docker compose up -d
 echo ""
-echo "Wireguard Admin UI is running on port 8080"
+echo "Wireguard Admin UI is running on port $WG_UI_PORT."
 echo "It's recommended to not expose Wireguard Admin UI port to the public internet for security reasons."

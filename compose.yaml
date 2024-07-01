@@ -3,9 +3,9 @@ services:
     image: ${WG_IMAGE}
     ports:
       - "${WG_PORT}:${WG_PORT}/udp"
-      - "8080:8080/tcp"
+      - "${WG_UI_PORT}:${WG_UI_PORT}/tcp"
     environment:
-      - PORT=8080
+      - PORT=${WG_UI_PORT}
       - WG_HOST=${WG_HOST}
       - WG_PORT=${WG_PORT}
       - WG_ALLOWED_IPS=${WG_ALLOWED_IPS}
