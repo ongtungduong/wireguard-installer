@@ -21,6 +21,6 @@ bash <(curl -sSL https://github.com/ongtungduong/wireguard-installer/raw/main/wi
 To get Wireguard CLI, run the following command.
 
 ```bash
-curl -sSL https://github.com/ongtungduong/wireguard-installer/raw/main/wireguard-cli.sh > /usr/local/bin/wireguard
-chmod +x /usr/local/bin/wireguard
+sudo curl -sSL https://github.com/ongtungduong/wireguard-installer/raw/main/wireguard-cli.sh > /usr/local/bin/wgcli
+sudo chmod +x /usr/local/bin/wgcli
 ```
